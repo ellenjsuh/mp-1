@@ -1,0 +1,81 @@
+/*Making sure content takes whole page*/
+#vertical_nav {
+    height: stretch;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputs {
+    width: stretch;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input_class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+}
+
+label {
+    padding: 4%;
+    text-align: center;
+}
+
+#first-number, #second-number{
+    border: 2px solid #A3B18A;
+    background-color: #F6F7F3;
+    padding: 6% 8%;
+    border-radius: 20px;
+    height: 40px;
+    width: 20vw;
+    font-size: calc(8px + 50%);
+}
+
+.button_wrapper {
+    padding: 1% 2% 2%;
+    width: stretch;
+    text-align: center;
+}
+
+.button_wrapper button{
+    font-size: calc(8px + 50%);
+    border: 2px solid #A3B18A;
+    background-color: #F6F7F3;
+    border-radius: 20px;
+    padding: 1% 2%;
+}
+
+.result {
+    width: stretch;
+}
+
+#output{
+    text-align: center;
+    height: 10vh;
+}
+
+.result img {
+    height: 200px;
+    width: auto;
+    text-align: center;
+    display: block;
+    margin-right: 10vw;
+    margin-left: auto;
+}
+
+.content p{
+    font-size: calc(12px + 0.25vw);
+}
+
+/*fixing weird clipping happening with footer*/
+@media  screen and (max-width: 1000px) {
+    main {
+        height: stretch;
+    }
+}
